@@ -1,0 +1,27 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [ "src/**/*.cs" ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "src": "."
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/*.yml",
+          "index.md",
+          "toc.md"
+        ]
+      }
+    ],
+    "dest": "wwwroot",
+    "markdownEngineName": "markdig"
+  }
+}
